@@ -9,6 +9,8 @@ use App\Entity\Pokemon;
 
 class AppFixtures extends Fixture
 {
+
+    #[Route('/pokemon2', name: 'app_pokemon2')]
     public function load(ObjectManager $manager): void
     {
         $client = HttpClient::create();
